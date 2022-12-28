@@ -15,8 +15,14 @@ namespace StoreWebSystem.Models
 
         public IFormFile ImageFile { get; set; }
         public CategoryDto Category { get; set; }
-       
+
+       // [DataType(DataType.Currency)]
+        [Display(Name = "BuyPrice")]
+        [DisplayFormat(DataFormatString = "{0:C2}")]
         public decimal BuyPrice { get; set; }
+
+     /*   [DataType(DataType.Currency)] */
+        [Display(Name = "SellPrice")][DisplayFormat(DataFormatString = "{0:C2}")] 
         public decimal SellPrice { get; set; }
         public int Quantity { get; set; }
         public int CategoryId { get; set; }
