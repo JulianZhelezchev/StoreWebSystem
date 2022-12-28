@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
 
 namespace StoreWebSystem.Models
 {
@@ -13,6 +15,7 @@ namespace StoreWebSystem.Models
 
         public IFormFile ImageFile { get; set; }
         public CategoryDto Category { get; set; }
+       
         public decimal BuyPrice { get; set; }
         public decimal SellPrice { get; set; }
         public int Quantity { get; set; }
